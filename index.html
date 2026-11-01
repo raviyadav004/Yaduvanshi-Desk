@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ECEFF4">
+  <meta name="description" content="Yaduvanshi Desk — a refined, local-first record management workspace.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Yaduvanshi Desk — Your Work. One Workspace.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/composer.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/productivity.css">
+</head>
+
+<body>
+  <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title" aria-describedby="welcome-description">
+    <div class="welcome-screen-top">
+      <a class="welcome-brand" href="./" data-welcome-route aria-label="Yaduvanshi Desk home">
+        <span class="welcome-brand-mark" aria-hidden="true">YD</span>
+        <span>Yaduvanshi <strong>Desk</strong></span>
+      </a>
+
+      <div class="welcome-screen-tools">
+        <span class="welcome-private"> <span></span> Private by design · Stored on your device</span>
+          <button class="icon-button welcome-theme-toggle" id="theme-toggle-welcome" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4" /> <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /> </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24"> <path d="M20.8 14.2A8.5 8.5 0 0 1 9.8 3.2 8.7 8.7 0 1 0 20.8 14.2Z" /> </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="welcome-screen-content">
+      <div class="welcome-screen-copy">
+        <p class="welcome-screen-eyebrow"><span></span> A CALMER WAY TO GET THINGS DONE</p>
+        <h1 id="welcome-title">Make space for<br><em>what matters.</em></h1>
+        <p id="welcome-description" class="welcome-screen-description">A thoughtful home for your records, priorities and plans. Keep everything organized, stay close to your next step, and work at your own pace.</p>
+
+        <div class="welcome-screen-actions">
+          <button class="button button-primary welcome-enter" id="welcome-enter" type="button"> Enter your workspace <span aria-hidden="true">→</span> </button>
+          <button class="welcome-explore" id="welcome-explore" type="button"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 5.5v15M8 7h8M8 11h8"/></svg> Explore features <span aria-hidden="true">↓</span> </button>
+        </div>
+
+        <p class="welcome-no-account"><svg viewBox="0 0 24 24" aria-hidden="true"> <path d="M12 3 5 6v5c0 4.5 3 7.7 7 10 4-2.3 7-5.5 7-10V6l-7-3Z" /> <path d="m9 12 2 2 4-4" /> </svg> No account required. Your data stays on this device.</p>
+
+        <div class="welcome-value-points">
+          <div><span class="welcome-value-icon">01</span><span><strong>Bring clarity to your day</strong><small>One organized space for the things that matter.</small></span></div>
+          <div>
+            <span class="welcome-value-icon">02</span>
+            <span><strong>Know what comes next</strong><small>Keep priorities visible and decisions simple.</small></span>
+          </div>
+          <div>
+            <span class="welcome-value-icon">03</span><span><strong>Stay in control</strong><small>Private, local-first records you can export.</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="welcome-features-section" id="welcome-features" aria-labelledby="welcome-features-title">
+      <div class="landing-section-heading">
+        <p class="landing-eyebrow">A MORE THOUGHTFUL WORKFLOW</p>
+        <h2 id="welcome-features-title">Everything in its place.<br><em>Clarity in every step.</em></h2>
+        <p>Simple tools that help you capture what matters, stay focused and keep your work organized.</p>
+      </div>
+
+      <div class="landing-feature-grid">
+        <article class="landing-feature-card landing-feature-card-primary">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="5" rx="2"/><rect x="13" y="10" width="8" height="11" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/></svg></span>
+          <span class="landing-feature-kicker">01 / OVERVIEW</span>
+          <h3>A dashboard with perspective</h3>
+          <p>See your records, progress, completed work and overdue items in one clear overview.</p>
+          <span class="landing-feature-foot">Know where things stand <b>↗</b></span>
+        </article>
+
+        <article class="landing-feature-card">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><path d="M7 3h10l4 4v14H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h7M9 13h6M9 17h8"/></svg></span>
+          <span class="landing-feature-kicker">02 / RECORDS</span>
+          <h3>One home for every detail</h3>
+          <p>Create, update and organize records with descriptions, categories, dates and status.</p>
+          <span class="landing-feature-foot">Keep the context close <b>↗</b></span>
+        </article>
+
+        <article class="landing-feature-card">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><path d="m12 3 2.4 5.1L20 9l-4 4 .9 5.7L12 16l-4.9 2.7L8 13l-4-4 5.6-.9L12 3Z"/></svg></span>
+          <span class="landing-feature-kicker">03 / PRIORITIES</span>
+          <h3>Focus on what matters next</h3>
+          <p>Set Urgent, High, Medium or Low priority and keep important work easy to find.</p>
+          <span class="landing-feature-foot">Make the next step visible <b>↗</b></span>
+        </article>
+
+        <article class="landing-feature-card">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M6 7V4h12v3m-11 0 1 13h8l1-13M10 11v5m4-5v5"/></svg></span>
+          <span class="landing-feature-kicker">04 / CONTROL</span>
+          <h3>Archive and restore with ease</h3>
+          <p>Move records out of your active workspace, then restore them from the Archive or Recycle Bin.</p>
+          <span class="landing-feature-foot">Your work stays manageable <b>↗</b></span>
+        </article>
+
+        <article class="landing-feature-card">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5M8 10.8h5.6"/></svg></span>
+          <span class="landing-feature-kicker">05 / DISCOVERY</span>
+          <h3>Find the right thing, faster</h3>
+          <p>Search, filter, sort and move through your collection with practical pagination.</p>
+          <span class="landing-feature-foot">Less searching, more doing <b>↗</b></span>
+        </article>
+
+        <article class="landing-feature-card">
+          <span class="landing-feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></svg></span>
+          <span class="landing-feature-kicker">06 / OWNERSHIP</span>
+          <h3>Your data, in your hands</h3>
+          <p>Keep records stored locally in your browser and import or export JSON backups when needed.</p>
+          <span class="landing-feature-foot">Private by design <b>↗</b></span>
+        </article>
+      </div>
+
+      <div class="landing-how">
+        <div class="landing-how-intro">
+          <p class="landing-eyebrow">A SIMPLE WAY TO BEGIN</p>
+          <h2>From scattered thoughts<br>to <em>clear next steps.</em></h2>
+          <p>No setup maze. Start with what you have and shape your workspace as you go.</p>
+        </div>
+
+        <div class="landing-steps">
+          <article><span>01</span><div><h3>Capture</h3><p>Add a record with the details and context you want to keep.</p></div></article>
+          <article><span>02</span><div><h3>Organize</h3><p>Choose a category, status, date and priority that make sense.</p></div></article>
+          <article><span>03</span><div><h3>Move forward</h3><p>Review your overview, focus on priorities and keep everything current.</p></div></article>
+        </div>
+      </div>
+
+      <div class="landing-bottom-cta">
+        <div><p class="landing-eyebrow">MAKE ROOM FOR WHAT MATTERS</p><h2>Your workspace is ready.</h2><p>Bring your records and priorities into one calmer place.</p></div>
+        <button class="button button-primary" id="welcome-bottom-enter" type="button">Enter your workspace <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <div class="welcome-footer-slot" id="welcome-footer-slot" aria-label="Welcome page footer"></div>
+  </section>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="./" data-welcome-route aria-label="Yaduvanshi Desk home">
+        <span class="brand-mark" aria-hidden="true">YD</span>
+        <span class="brand-word">Yaduvanshi<span> Desk</span></span>
+      </a>
+
+      <div class="workspace-switcher">
+        <span class="workspace-avatar">YD</span>
+        <span class="workspace-meta"><strong>Personal workspace</strong><small>Free workspace</small></span>
+        <span class="switcher-chevron">⌄</span>
+      </div>
+
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="sidebar-nav" aria-label="Workspace">
+        <button class="nav-link is-active" data-view="dashboard" type="button"><span class="nav-icon">◫</span><span>Overview</span><span class="nav-indicator"></span></button>
+        <button class="nav-link" data-view="records" type="button"><span class="nav-icon">▤</span><span>All records</span><span class="nav-count" id="nav-record-count">0</span></button>
+        <button class="nav-link" data-view="priority" type="button"><span class="nav-icon">⚑</span><span>Priority</span><span class="nav-count" id="nav-priority-count">0</span></button>
+        <button class="nav-link" data-view="archive" type="button"><span class="nav-icon">▣</span><span>Archive</span><span class="nav-count" id="nav-archive-count">0</span></button>
+        <button class="nav-link" data-view="recycle" type="button"><span class="nav-icon">⌫</span><span>Recycle Bin</span><span class="nav-count" id="nav-recycle-count">0</span></button>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+      <p class="sidebar-label">YOUR SPACE</p>
+      <div class="sidebar-note">
+        <span class="sidebar-note-icon">✳</span>
+        <div><strong>A little clarity goes a long way.</strong>
+          <p>Keep the important things in one calm, organized place.</p>
+        </div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="local-storage-card"><span class="storage-check">✓</span>
+          <div><strong>Stored on this device</strong><small>Your records stay private</small></div><span
+            class="status-dot"></span>
+        </div>
+
+        <div class="profile-row"><span class="profile-avatar">YD</span>
+          <span class="profile-meta"><strong>Your workspace</strong><small>Personal account</small></span>
+          <button class="profile-more" id="utility-button" type="button" aria-label="More data options" title="More options">•••</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="mobile-topbar">
+      <a class="brand" href="./" data-welcome-route aria-label="Yaduvanshi Desk home"><span class="brand-mark" aria-hidden="true">YD</span><span class="brand-word">Yaduvanshi<span> Desk</span></span></a>
+      <div class="mobile-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4" /> <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /> </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24"> <path d="M20.8 14.2A8.5 8.5 0 0 1 9.8 3.2 8.7 8.7 0 1 0 20.8 14.2Z" /> </svg>
+        </button>
+
+        <button class="icon-button mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24"> <path d="M4 7h16M4 12h16M4 17h16" /> </svg>
+        </button>
+      </div>
+    </div>
+
+    <button class="mobile-nav-backdrop" id="mobile-nav-backdrop" type="button" aria-label="Close navigation" hidden></button>
+    <aside class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <a class="brand" href="./" data-welcome-route aria-label="Yaduvanshi Desk home"> <span class="brand-mark" aria-hidden="true">YD</span><span class="brand-word">Yaduvanshi<span> Desk</span></span> </a>
+        <button class="icon-button" id="mobile-menu-close" type="button" aria-label="Close navigation">×</button>
+      </div>
+
+      <div class="mobile-drawer-context"><span class="workspace-avatar">YD</span>
+        <span><strong>Personal workspace</strong><small>Your private collection</small></span>
+      </div>
+
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="mobile-drawer-nav" aria-label="Mobile workspace">
+        <button class="mobile-nav-link is-active" data-view="dashboard" type="button"><span class="drawer-nav-icon">◫</span> Overview</button>
+        <button class="mobile-nav-link" data-view="records" type="button"><span class="drawer-nav-icon">▤</span> All records <span id="mobile-nav-count">0</span></button>
+        <button class="mobile-nav-link" data-view="priority" type="button"><span class="drawer-nav-icon">⚑</span> Priority</button>
+        <button class="mobile-nav-link" data-view="archive" type="button"><span class="drawer-nav-icon">▣</span> Archive</button>
+        <button class="mobile-nav-link" data-view="recycle" type="button"><span class="drawer-nav-icon">⌫</span> Recycle Bin</button>
+      </nav>
+
+      <div class="mobile-drawer-bottom"><span class="mobile-drawer-status"><i></i> Stored on this device</span>
+        <p>Your work stays yours. No account or cloud sync required.</p>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main-content" tabindex="-1">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Workspace</span>
+          <span class="breadcrumb-slash">/</span><strong id="view-label">Overview</strong>
+          </div>
+
+        <div class="topbar-actions">
+          <span class="storage-indicator"><span class="status-dot"></span> All changes saved</span>
+          <button class="icon-button desktop-theme-toggle" id="theme-toggle-desktop" type="button" aria-label="Switch theme" title="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4" /> <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /> </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24"> <path d="M20.8 14.2A8.5 8.5 0 0 1 9.8 3.2 8.7 8.7 0 1 0 20.8 14.2Z" /> </svg>
+          </button>
+          <button class="button button-primary top-create" id="top-create" type="button"><span>＋</span> New record</button>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="welcome-row">
+          <div class="welcome-copy-column">
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR PERSONAL WORKSPACE</p>
+            <h1 id="page-title">A little more <em>organized.</em></h1>
+            <p class="welcome-copy" id="welcome-copy">Your ideas, projects, and plans — all in one thoughtful place.</p>
+            <div class="welcome-row-actions">
+              <button class="button button-primary" id="welcome-create" type="button">＋ Create a record</button>
+              <button class="welcome-view-records" data-view="records" type="button">Explore your records <span aria-hidden="true">→</span></button>
+              </div>
+          </div>
+
+          <div class="welcome-date"><span class="date-label">TODAY, AT A GLANCE</span><strong id="today-date">—</strong>
+            <span class="date-subtitle">Make room for what matters.</span>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Record overview">
+          <article class="stat-card stat-total">
+            <div class="stat-top"><span class="stat-label">Total records</span><span class="stat-icon icon-coral">▤</span> </div>
+            <div class="stat-bottom"><strong id="stat-total">—</strong><span class="stat-caption">Everything you've saved</span></div>
+                <span class="stat-decoration"></span>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">In progress</span><span class="stat-icon icon-blue">◷</span> </div>
+            <div class="stat-bottom"><strong id="stat-progress">—</strong><span class="stat-caption">Currently underway</span></div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">Completed</span><span class="stat-icon icon-green">✓</span> </div>
+            <div class="stat-bottom"><strong id="stat-completed">—</strong><span class="stat-caption">Successfully wrapped up</span></div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-label">Overdue</span><span class="stat-icon icon-gold">!</span> </div>
+            <div class="stat-bottom"><strong id="stat-overdue">—</strong><span class="stat-caption">Worth a second look</span></div>
+          </article>
+        </section>
+
+        <section class="priority-overview" id="priority-overview" aria-labelledby="priority-overview-title">
+          <div class="priority-overview-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">ATTENTION, AT A GLANCE</p>
+              <h2 id="priority-overview-title">Priority overview</h2>
+              <p>Keep urgent work visible and the rest in perspective.</p>
+            </div>
+            <button class="text-action" data-view="priority" type="button">View priority queue <span aria-hidden="true">→</span></button>
+          </div>
+
+          <div class="priority-overview-grid">
+            <div class="priority-overview-item"><span class="priority-badge priority-URGENT">Urgent</span><strong id="priority-count-urgent">0</strong></div>
+            <div class="priority-overview-item"><span class="priority-badge priority-HIGH">High</span><strong id="priority-count-high">0</strong></div>
+            <div class="priority-overview-item"><span class="priority-badge priority-MEDIUM">Medium</span><strong id="priority-count-medium">0</strong></div>
+            <div class="priority-overview-item"><span class="priority-badge priority-LOW">Low</span><strong id="priority-count-low">0</strong></div>
+          </div>
+        </section>
+
+        <section class="records-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">YOUR COLLECTION</p>
+              <h2 id="records-heading">Recent records <span id="heading-count" class="heading-count">0</span></h2>
+              <p class="section-subtitle" id="section-subtitle">A clear view of what matters right now.</p>
+            </div>
+
+            <div class="heading-actions">
+              <button class="button button-secondary" id="export-button" type="button"><svg viewBox="0 0 24 24"> <path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3" /> </svg><span>Export</span></button>
+              <button class="button button-secondary" id="empty-recycle-button" type="button" hidden>Empty bin</button><button class="button button-primary" id="new-record-button" type="button"><span>＋</span> New record</button>
+            </div>
+          </div>
+
+          <div class="toolbar" role="search">
+            <label class="search-box" for="search-input">
+              <svg viewBox="0 0 24 24"> <circle cx="10.8" cy="10.8" r="6.8" /> <path d="m16 16 4.5 4.5" /> </svg>
+              <input id="search-input" type="search" placeholder="Search by title..." autocomplete="off"><kbd>/</kbd>
+            </label>
+
+            <div class="filter-controls">
+              <label class="select-wrap">
+                <span class="sr-only">Filter by category</span>
+                <select id="category-filter"> <option value="all">All categories</option> </select>
+                <svg viewBox="0 0 24 24"> <path d="m7 10 5 5 5-5" /> </svg>
+              </label>
+
+              <label class="select-wrap">
+                <span class="sr-only">Filter by priority</span>
+                <select id="priority-filter">
+                  <option value="all">All priorities</option>
+                  <option value="URGENT">Urgent</option>
+                  <option value="HIGH">High</option>
+                  <option value="MEDIUM">Medium</option>
+                  <option value="LOW">Low</option>
+                </select>
+                <svg viewBox="0 0 24 24"> <path d="m7 10 5 5 5-5" /> </svg>
+              </label>
+
+              <label class="select-wrap">
+                <span class="sr-only">Filter by status</span>
+                <select id="status-filter">
+                  <option value="all">All statuses</option>
+                  <option value="TODO">To do</option>
+                  <option value="IN_PROGRESS">In progress</option>
+                  <option value="COMPLETED">Completed</option>
+                </select>
+                <svg viewBox="0 0 24 24"> <path d="m7 10 5 5 5-5" /> </svg>
+              </label>
+
+              <label class="date-filter">
+                <span class="sr-only">Due date from</span>
+                <input id="date-from-filter" type="date" aria-label="Date from" title="Date from">
+              </label>
+
+              <label class="date-filter">
+                <span class="sr-only">Due date to</span>
+                <input id="date-to-filter" type="date" aria-label="Date to" title="Date to">
+              </label>
+
+              <label class="select-wrap sort-select">
+                <span class="sr-only">Sort records</span>
+                <select id="sort-select">
+                  <option value="date-desc">Newest first</option>
+                  <option value="date-asc">Oldest first</option>
+                  <option value="title-asc">Title A–Z</option>
+                  <option value="title-desc">Title Z–A</option>
+                  <option value="priority-desc">Priority: highest first</option>
+                  <option value="updated-desc">Recently updated</option>
+                </select>
+                <svg viewBox="0 0 24 24"> <path d="m7 10 5 5 5-5" /> </svg>
+              </label>
+              <button class="reset-button" id="reset-filters" type="button" hidden>Reset filters</button>
+            </div>
+          </div>
+
+          <div class="results-meta">
+            <span id="results-summary">Loading your records…</span>
+            <span class="results-meta-right">LOCAL COLLECTION <span class="meta-dot"></span></span>
+          </div>
+
+          <div class="loading-state" id="loading-state">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
+
+          <div class="bulk-toolbar" id="bulk-toolbar" hidden>
+            <span class="bulk-selection-count" id="bulk-selection-count">0 selected</span>
+            <button class="button button-secondary" id="bulk-archive-button" type="button">Archive selected</button>
+            <button class="button button-secondary" id="bulk-recycle-button" type="button">Move to Recycle Bin</button>
+            <button class="button button-quiet" id="bulk-clear-button" type="button">Clear selection</button>
+          </div>
+
+          <div class="records-grid" id="records-grid" aria-live="polite"></div>
+          <div class="empty-state" id="empty-state" hidden>
+
+            <div class="empty-illustration" aria-hidden="true">
+              <span class="empty-circle"></span>
+              <svg viewBox="0 0 88 88"> <rect x="22" y="17" width="44" height="54" rx="7" /> <path d="M32 32h24M32 42h24M32 52h15" /> </svg>
+              <span class="empty-spark spark-a">✳</span><span class="empty-spark spark-b">✦</span></div>
+            <h3 id="empty-title">A fresh page.</h3>
+            <p id="empty-copy">Your collection is waiting. Add your first record and make this space yours.</p>
+            <button class="button button-primary" id="empty-create-button" type="button">＋ Create your first record</button>
+          </div>
+
+          <div class="pagination-row" id="pagination-row" hidden>
+            <span id="pagination-info">Showing 0–0 of 0</span>
+            <div class="pagination-controls">
+              <button class="page-button" id="previous-page" type="button" aria-label="Previous page">‹</button>
+                <span class="page-number" id="page-number">1 / 1</span>
+                <button class="page-button" id="next-page" type="button" aria-label="Next page">›</button>
+              </div>
+          </div>
+        </section>
+
+        <div class="dashboard-footer-slot" id="dashboard-footer-slot">
+        <footer class="app-footer" id="shared-app-footer">
+          <div class="footer-main">
+            <div class="footer-brand-block">
+              <div class="footer-brand">
+                <span class="footer-mark">YD</span>
+                <span class="footer-brand-copy"><strong>Yaduvanshi Desk</strong><small>Your Work. One Workspace.</small></span>
+                  </div>
+              <p>A calmer, more thoughtful place to organize your records, priorities and plans.</p>
+              <span class="footer-local-note"><span class="footer-status-dot"></span> Private by design · Saved on this device</span>
+            </div>
+
+            <div class="footer-link-group">
+              <span class="footer-group-label">YOUR WORKSPACE</span>
+              <button type="button" data-view="dashboard">Overview</button>
+              <button type="button" data-view="records">All records</button>
+              <button type="button" data-view="priority">Priority queue</button>
+            </div>
+
+            <div class="footer-link-group">
+              <span class="footer-group-label">ORGANIZE</span>
+              <button type="button" data-view="archive">Archive</button>
+              <button type="button" data-view="recycle">Recycle Bin</button>
+              <button type="button" id="footer-new-record">Create a record <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>© <span id="footer-year">2026</span> Yaduvanshi Desk</span>
+            <span class="footer-bottom-center">Designed for focus. Built for everyday work.</span>
+            <span class="footer-version"><i></i> Offline-first workspace</span>
+          </div>
+        </footer>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <dialog class="record-dialog" id="record-dialog" aria-labelledby="dialog-title">
+    <form id="record-form" novalidate>
+      <aside class="form-aside" aria-label="Record creation guide">
+        <a class="form-aside-brand" href="./" data-welcome-route tabindex="-1">
+          <span class="form-aside-mark">YD</span>
+          <span>Yaduvanshi Desk</span>
+        </a>
+
+        <div class="form-aside-art" aria-hidden="true">
+          <span class="art-orbit orbit-one"></span>
+          <span class="art-orbit orbit-two"></span>
+          <span class="art-card art-card-back"></span>
+          <span class="art-card art-card-front">
+          <span class="art-card-check">✓</span>
+          <span class="art-line art-line-long"></span>
+          <span class="art-line"></span>
+          <span class="art-pill"></span>
+        </span>
+          <span class="art-spark">✦</span>
+        </div>
+
+        <p class="form-aside-kicker">A LITTLE SPACE TO THINK</p>
+        <h3>Make room for<br><em>what matters.</em></h3>
+        <p class="form-aside-copy">Capture the details now. Keep your plans clear, organized, and easy to come back to. </p>
+        <div class="form-aside-benefits"><span><b>01</b> Give it a clear name</span>
+          <span><b>02</b> Add context that helps</span>
+          <span><b>03</b> Choose a next step</span>
+        </div>
+        <div class="form-aside-local"><span class="form-aside-local-dot"></span> Saved privately on this device</div>
+      </aside>
+
+      <div class="form-main">
+        <div class="dialog-header">
+          <div>
+            <p class="eyebrow section-eyebrow" id="dialog-eyebrow">ADD TO YOUR COLLECTION</p>
+            <h2 id="dialog-title">Create a record</h2>
+            <p class="dialog-description">A few details are all it takes to get organized.</p>
+          </div>
+          <button class="icon-button dialog-close" id="dialog-close" type="button" aria-label="Close dialog">×</button>
+        </div>
+
+        <div class="form-fields">
+          <input type="hidden" id="record-id">
+          <div class="form-field">
+            <label for="record-title">Title <span class="required-mark">*</span></label>
+            <input id="record-title" name="title" type="text" maxlength="100" placeholder="e.g. Website redesign" required>
+            <span class="field-hint">Give your record a clear, memorable name.</span>
+            <span class="field-error" id="title-error"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="record-description">Description</label>
+            <textarea id="record-description" name="description" rows="3" maxlength="1000" placeholder="Add a little context or a few important details..."></textarea>
+            <span class="field-hint">Optional · Up to 1,000 characters.</span>
+            <span class="field-error" id="description-error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="record-priority">Priority <span class="required-mark">*</span></label>
+                <select id="record-priority" name="priority" required>
+                <option value="URGENT">Urgent</option>
+                <option value="HIGH">High</option>
+                <option value="MEDIUM" selected>Medium</option>
+                <option value="LOW">Low</option>
+              </select>
+              <span class="field-error" id="priority-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="record-status">Status <span class="required-mark">*</span></label>
+              <select id="record-status" name="status" required>
+                <option value="TODO">To do</option>
+                <option value="IN_PROGRESS">In progress</option>
+                <option value="COMPLETED">Completed</option>
+              </select>
+              <span class="field-error" id="status-error"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="record-category">Category <span class="required-mark">*</span></label>
+            <select id="record-category" name="category" required>
+              <option value="">Choose category</option>
+              <option>Work</option>
+              <option>Personal</option>
+              <option>Design</option>
+              <option>Development</option>
+              <option>Learning</option>
+              <option>Finance</option>
+              <option>Health</option>
+              <option>Other</option>
+            </select>
+            <span class="field-error" id="category-error"></span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="record-date">Date <span class="required-mark">*</span></label>
+          <input id="record-date" name="date" type="date" required>
+          <span class="field-hint">Due date or the date associated with this record.</span>
+          <span class="field-error" id="date-error"></span>
+        </div>
+      </div>
+
+      <div class="dialog-footer">
+        <span class="form-note"><span class="required-mark">*</span> Required fields</span>
+        <div class="dialog-actions">
+          <button class="button button-secondary" id="cancel-record" type="button">Cancel</button>
+          <button class="button button-primary" id="save-record-button" type="submit"><span id="save-button-label">Save record</span><span class="button-spinner" id="save-spinner" hidden></span></button>
+        </div>
+      </div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title">
+    <div class="confirm-content">
+      <div class="confirm-icon">
+        <svg viewBox="0 0 24 24"> <path d="M4 7h16M9 7V4h6v3m-9 0 1 13h10l1-13M10 11v5m4-5v5" /> </svg>
+      </div>
+
+      <h2 id="confirm-title">Delete this record?</h2>
+      <p id="confirm-copy">This record will move to the Recycle Bin and can be restored later.</p>
+      <div class="confirm-actions">
+        <button class="button button-secondary" id="cancel-delete" type="button">Keep record</button>
+        <button class="button button-danger" id="confirm-delete" type="button">Delete record</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="confirm-dialog" id="clear-dialog" aria-labelledby="clear-title">
+    <div class="confirm-content">
+      <div class="confirm-icon confirm-icon-danger">
+        <svg viewBox="0 0 24 24"> <path d="M4 7h16M9 7V4h6v3m-9 0 1 13h10l1-13" /> </svg>
+      </div>
+
+      <h2 id="clear-title">Clear all records?</h2>
+      <p>This permanently deletes every record stored in this browser. Export your data first if you want a backup.</p>
+      <div class="confirm-actions">
+        <button class="button button-secondary" id="cancel-clear" type="button">Cancel</button>
+        <button class="button button-danger" id="confirm-clear" type="button">Clear everything</button>
+      </div>
+    </div>
+  </dialog>
+
+  <input type="file" id="import-file" accept=".json,application/json" hidden>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div class="settings-popover" id="settings-popover" hidden>
+    <button id="import-button" type="button"><span>↑</span><span><strong>Import JSON</strong><small>Restore a previous export</small></span></button>
+    <button id="export-backup-button" type="button"><span>↓</span><span><strong>Full backup</strong><small>Export active, archived and deleted records</small></span></button>
+    <button id="clear-all-button" type="button"><span>⌫</span><span><strong>Clear all records</strong><small>Remove everything on this device</small></span></button>
+  </div>
+
+  <script>
+    (() => {
+      const key = "yaduvanshi.session.screen.v1";
+      const valid = ["welcome", "dashboard", "records", "priority", "archive", "recycle"];
+      let screen = "welcome";
+
+      try {
+        const saved = sessionStorage.getItem(key);
+        if (valid.includes(saved)) screen = saved;
+      } catch (_) {
+        /* Private browsing restrictions fall back to Welcome. */
+      }
+
+      document.documentElement.dataset.initialScreen = screen;
+      if (screen === "welcome") document.documentElement.classList.add("show-welcome");
+    })();
+
+  </script>
+    <script src="js/storage.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
